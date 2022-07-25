@@ -16,3 +16,29 @@
 * Which gender will mostly likely to contain suicide?
 * Did suicide rate decreased in the recent years?
 
+
+## Source of Data
+
+*Facilities.csv*
+
+### Where did you download the data (e.g., a web URL)?
+
+* I download this data from the website call "Kaggle".
+[Facilities.csv](https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Facilities.csv)
+
+### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
+
+* Not sure where the data was collected nor generated, but the person who collected the data was _Twinkle Khanna_. This data is about the suicide rate in different countries including health and other sectors.
+
+### How many observations (rows) are in your data?
+
+* There are 113 rows in this data
+
+### How many features (columns) are in the data?
+
+* There are 7 columns in this data
+
+### What questions (from above) can be answered using the data in this dataset?
+
+* Which countries has the highest suicide rate?
+
