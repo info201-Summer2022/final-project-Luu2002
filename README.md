@@ -42,6 +42,7 @@
 
 * Which countries has the highest suicide rate?
 
+<<<<<<< HEAD
 **Country+Gender.csv**
 
 ### Where did you download the data (e.g., a web URL)?
@@ -105,3 +106,28 @@
 ### What questions (from above) can be answered using the data in this dataset?
 
 * What age group will most likely to contain suicide?
+=======
+Master.cvs
+
+### Where did you download the data (e.g., a web URL)?
+
+* I download this data from the website call "Kaggle".
+https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016?resource=download
+
+### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
+
+* This data was pulled from four other datasets linked by time and place, and was built to find signals correlated to increased suicide rates among different cohorts globally, across the socio-economic spectrum. It did not mention who specific collected the data.
+
+### How many observations (rows) are in your data?
+
+* There are 113 rows in this data
+
+### How many features (columns) are in the data?
+
+* There are 12 columns in this data
+
+### What questions (from above) can be answered using the data in this dataset?
+
+* Which countries has the highest suicide rate?
+
+>>>>>>> 7c0989b2bd8b0ed2f7aea760eacb98c909104b11
