@@ -42,7 +42,6 @@
 
 * Which countries has the highest suicide rate?
 
-<<<<<<< HEAD
 **Country+Gender.csv**
 
 ### Where did you download the data (e.g., a web URL)?
