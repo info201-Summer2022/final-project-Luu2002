@@ -42,6 +42,7 @@
 
 * Which countries has the highest suicide rate?
 
+
 **Country+Gender.csv**
 
 ### Where did you download the data (e.g., a web URL)?
@@ -63,7 +64,9 @@
 
 * Which gender will mostly likely to contain suicide?
 
+
 **Year.csv**
+
 ### Where did you download the data (e.g., a web URL)?
 
 * [WHO](https://www.who.int/data/gho/data/themes/mental-health/suicide-rates)
@@ -105,7 +108,8 @@
 ### What questions (from above) can be answered using the data in this dataset?
 
 * What age group will most likely to contain suicide?
-=======
+
+
 Master.cvs
 
 ### Where did you download the data (e.g., a web URL)?
@@ -128,5 +132,3 @@ https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-20
 ### What questions (from above) can be answered using the data in this dataset?
 
 * Which countries has the highest suicide rate?
-
->>>>>>> 7c0989b2bd8b0ed2f7aea760eacb98c909104b11
