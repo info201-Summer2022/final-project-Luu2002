@@ -8,7 +8,7 @@ rate2019female <- c(6.5,7.5,9.2,7.6, 4.3, 6.2, 4,1.9)
 rate2019male <- c(39.2, 25,21.8, 23.2, 13.3, 9.8, 11.8, 5)
 age <- data.frame(country, rate2019both, rate2019female, rate2019male)
 bar <- plot_ly(age, x = ~country, y = ~rate2019both, type = "bar", name = "Both")
-bar <- fig %>% add_trace(y = ~rate2019female, name = "Female")
-bar <- fig %>% add_trace(y = ~rate2019male, name = "Male")
-bar <- fig %>% layout(yaxis = list(title = "rate"), title = "Suicide rate By Gender", barmode ="group")
-bar
+fig <- fig %>% add_trace(y = ~rate2019female, name = "Female")
+fig <- fig %>% add_trace(y = ~rate2019male, name = "Male")
+fig <- fig %>% layout(yaxis = list(title = "rate"), title = "Suicide rate By Gender", barmode ="group")
+fig
