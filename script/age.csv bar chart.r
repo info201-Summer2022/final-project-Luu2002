@@ -1,14 +1,14 @@
 
 library(plotly)
 age <- read.csv("~/Desktop/age.csv", header=FALSE)%>%
-  select(country, rate2019both, rate2019female, rate2019male) %>%
-  filter(country %in% c("united states", "Japan", "Mexico, philippines", "Korea", "Poland", "Singapore", "Qatar"))
-rate2019both <- c(21.6, 16.1, 15.3, 15.3, 8.9, 8.1, 7.9, 3.5)
-rate2019female <- c(6.5,7.5,9.2,7.6, 4.3, 6.2, 4,1.9)
-rate2019male <- c(39.2, 25,21.8, 23.2, 13.3, 9.8, 11.8, 5)
-age <- data.frame(country, rate2019both, rate2019female, rate2019male)
-fig <- plot_ly(age, x = ~country, y = ~rate2019both, type = "bar", name = "Both")
-fig <- fig %>% add_trace(y = ~rate2019female, name = "Female")
-fig <- fig %>% add_trace(y = ~rate2019male, name = "Male")
-fig <- fig %>% layout(yaxis = list(title = "rate"), title = "Suicide rate By Gender", barmode ="group")
+  select(V8, V13, V14, V16) %>%
+  filter(V8 %in% c("united states", "Japan", "Mexico, philippines", "Korea", "Poland", "Singapore", "Qatar"))
+V13 <- c(21.6, 16.1, 15.3, 15.3, 8.9, 8.1, 7.9, 3.5)
+V14 <- c(6.5,7.5,9.2,7.6, 4.3, 6.2, 4,1.9)
+V16 <- c(39.2, 25,21.8, 23.2, 13.3, 9.8, 11.8, 5)
+age <- data.frame(V8, V13, V14, V16)
+fig <- plot_ly(age, x = ~V8, y = ~V13, type = "bar", name = "Both")
+fig <- fig %>% add_trace(y = ~V14, name = "Female")
+fig <- fig %>% add_trace(y = ~V16, name = "Male")
+fig <- fig %>% layout(yaxis = list(title = "rate"), title = "Suicide rate By Age", barmode ="group")
 fig
