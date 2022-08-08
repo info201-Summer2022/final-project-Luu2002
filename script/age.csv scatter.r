@@ -9,5 +9,5 @@ age <- data.frame(V8, V13, V14, V16)
 sca <- plot_ly(age, x = ~V8, y = ~V13, type = 'scatter', name = 'Both', mode = 'makers', marker = list(opacity = 1))
 fig <- fig %>% add_trace(y = ~V14, name = 'Female')
 fig <- fig %>% add_trace(y = ~V16, name = 'Male')
-fig <- fig %>% layout(xaxis = list(showgrid = FALSE), yaxis = list(title = "Rate"), title = "Suicide rate By Gender", barmode = 'group')
+fig <- fig %>% layout(xaxis = list(showgrid = FALSE), yaxis = list(title = "Rate"), title = "Suicide rate By Age", barmode = 'group')
 fig
