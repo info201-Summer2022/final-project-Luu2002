@@ -131,7 +131,8 @@ second most daily treatment
 #This is a pie chart that shows these countries's sucide rate. Pie chart gives out excat rate of the data, and from this chart I can see that Qatar has the least sucidrate among these countries. 
 
 ###scatter plot
-![scatterplot]![new sca](https://user-images.githubusercontent.com/108854993/183526916-62bdfa35-50fc-42f2-867a-753235521207.png)
+![scartt](https://user-images.githubusercontent.com/108854993/183532942-7cb8434d-e4cc-48af-8c9e-b8eddc1d927a.png)
+
 
 #This scatter chart represent the average sucide age among these countries. In this chart, I found out that US has the highest suciderate among these countries. And Qatar has the lowest.
 
