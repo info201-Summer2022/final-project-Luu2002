@@ -137,7 +137,8 @@ second most daily treatment
 #This scatter chart represent the average sucide age among these countries. In this chart, I found out that US has the highest suciderate among these countries. And Qatar has the lowest.
 
 ###bar chart
-![bar chart]![new bar](https://user-images.githubusercontent.com/108854993/183526885-6538716b-339b-407a-807a-115c4cc05c54.png)
+![new](https://user-images.githubusercontent.com/108854993/183533034-d5a955ca-497f-4b5e-bfb9-2c1ad17a1a83.png)
+
 
 
 #This bar chart also shows the suciderate by age among these countires, the bar chart gives out a better understanding on the data. In this chart I found that the the average sucide age in the US is 40 years old.
