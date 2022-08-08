@@ -5,7 +5,7 @@ library(dplyr)
 
 # read data frame "Facilities.csv"
 # filter down the data to 8 different countries
-dataframe <- read.csv("Facilities .csv") %>%
+dataframe <- read.csv("Facilities.csv") %>%
   filter(Country %in% c('Japan', 'United States of America', 'Mexico', 'Morocco', 'Cuba', 'Poland', 'Singapore', 'Qatar')) 
 
 # store the filtered data into the new variable called, "table_summary"
