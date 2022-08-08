@@ -11,7 +11,7 @@ dataset <- read.csv("Suicide_Age.csv") %>%
 # put the filtered data set into a new table call 'table_summary'
 # then group the data set into 6 different values
 # summaries the value by providing an easy read name
-# then delete unnessary values from the table
+# then delete unnecessary values from the table
   table_summary <- dataset %>%
   group_by(Location, Period, Dim1, FactValueNumeric, FactValueNumericLow, FactValueNumericHigh) %>%
   summarise(Gender = (Dim1), Avg_rate = (FactValueNumeric), Low_rate =(FactValueNumericLow), High_rate = (FactValueNumericHigh))
