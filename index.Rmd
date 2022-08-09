@@ -68,7 +68,7 @@ This is a pie chart that shows these countries suicide rate. Pie chart gives out
 
 ![Scatter](https://user-images.githubusercontent.com/108854993/183532942-7cb8434d-e4cc-48af-8c9e-b8eddc1d927a.png)
 
-#This scatter chart represent the average suicide age among these countries. In this chart, I found out that US has the highest suicide rate among these countries. And Qatar has the lowest.
+This scatter chart represent the average suicide age among these countries. In this chart, I found out that US has the highest suicide rate among these countries. And Qatar has the lowest.
 
 #### Bar chart
 
