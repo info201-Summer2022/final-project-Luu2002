@@ -40,28 +40,36 @@ kable(table_summary_fac)
 
 The purpose of this scatter plot is to have a clear look at the facilities in each countries. The pertinent observations that I found was how comparing the 8 countries Japan has one of the top for mental hospital and one of the top for daily treatment which was kind of surprising to see how high it is.
 
-![Scatter Plot](/Users/luluuchenn/Desktop/Scatter.png)
+![Scatter Plot](/Users/luluuchenn/final-project-Luu2002/images/Fac_Scatter.png)
 
 #### Funnel Plot
 
 The purpose of this chart is to see the relationship between Japan and the United States. Pertinent observation is how America in a different data has the highest suicide rate comparing to other.
 
-![Funnel Chart](/Users/luluuchenn/Desktop/Funnel.png)
+![Funnel Chart](/Users/luluuchenn/final-project-Luu2002/images/Fac_Funnel.png)
 
 #### Bar Chart
 
 The purpose of this chart is for fast visual on the country of the highest suicide rate by facilities. By looking at it Japan is the countries with the most and how Cuba has the most residential facilities and Poland has the second most daily treatment
 
-![Bar Chart](/Users/luluuchenn/Desktop/Bar.png)
+![Bar Chart](/Users/luluuchenn/final-project-Luu2002/images/Fac_Bar.png)
 
-library(plotly) age \<- read.csv("\~/Desktop/age.csv", header=FALSE)%\>% select(V8, V13, V14, V16) %\>% filter(V8 %in% c("united states", "Japan", "Mexico, philippines", "Korea", "Poland", "Singapore", "Qatar")) V13 \<- c(21.6, 16.1, 15.3, 15.3, 8.9, 8.1, 7.9, 3.5) V14 \<- c(6.5,7.5,9.2,7.6, 4.3, 6.2, 4,1.9) V16 \<- c(39.2, 25,21.8, 23.2, 13.3, 9.8, 11.8, 5) age \<- data.frame(V8, V13, V14, V16) sca \<- plot_ly(age, x = \~V8, y = \~V13, type = 'scatter', name = 'Both', mode = 'makers', marker = list(opacity = 1)) fig \<- fig %\>% add_trace(y = \~V14, name = 'Female') fig \<- fig %\>% add_trace(y = \~V16, name = 'Male') fig \<- fig %\>% layout(xaxis = list(showgrid = FALSE), yaxis = list(title = "Rate"), title = "Suicide rate By Age", barmode = 'group') fig
+### Charts
 
-#This scatter chart represent the Suciderate by age among these countries. In this chart, I found out that US male has the highest suciderate among these countries. And Qatar has the lowest.
+#### Pie chart
 
-library(plotly) age \<- read.csv("\~/Desktop/age.csv", header=FALSE)%\>% select(V8, V13, V14, V16) %\>% filter(V8 %in% c("united states", "Japan", "Mexico, philippines", "Korea", "Poland", "Singapore", "Qatar")) V13 \<- c(21.6, 16.1, 15.3, 15.3, 8.9, 8.1, 7.9, 3.5) V14 \<- c(6.5,7.5,9.2,7.6, 4.3, 6.2, 4,1.9) V16 \<- c(39.2, 25,21.8, 23.2, 13.3, 9.8, 11.8, 5) age \<- data.frame(V8, V13, V14, V16) fig \<- plot_ly(age, x = \~V8, y = \~V13, type = "bar", name = "Both") fig \<- fig %\>% add_trace(y = \~V14, name = "Female") fig \<- fig %\>% add_trace(y = \~V16, name = "Male") fig \<- fig %\>% layout(yaxis = list(title = "rate"), title = "Suicide rate By Age", barmode ="group") fig
+![Rplot](https://user-images.githubusercontent.com/108854993/183355555-d52b2834-b352-4b13-9029-3a24cc4017cd.png)
 
-#This bar chart also shows the suciderate by age among these countires, the bar chart gives out a better understanding on the data. In this chart I found that male has more sucide rate than women among these countries.
+This is a pie chart that shows these countries suicide rate. Pie chart gives out exact rate of the data, and from this chart I can see that Qatar has the least suicide rate among these countries.
 
-library(ggplot2) slices \<- c(22, 16, 15, 15, 9, 9, 8, 4) lbls \<- c("US", "Japan", "Mexico","Philippines", "Korean", "Poland","Singapore","Qatar") pct \<- round(slices/sum(slices)\*100) lbls \<- paste(lbls, pct) lbls \<- paste(lbls,"%",sep="") pie(slices,labels = lbls, col=rainbow(length(lbls)), main="Pie Chart of Countries")
+#### Scatter plot
 
-#This is a pie chart that shows these countries's suciderate. Pie chart gives out excat rate of the data, and from this chart I can see that Qatar has the least sucidrate among these countries. \>\>\>\>\>\>\> eaedde4e9dc45d3e23bb1588f10504b31122e2a1
+![Scatter](https://user-images.githubusercontent.com/108854993/183532942-7cb8434d-e4cc-48af-8c9e-b8eddc1d927a.png)
+
+#This scatter chart represent the average suicide age among these countries. In this chart, I found out that US has the highest suicide rate among these countries. And Qatar has the lowest.
+
+#### Bar chart
+
+![Bar](https://user-images.githubusercontent.com/108854993/183533034-d5a955ca-497f-4b5e-bfb9-2c1ad17a1a83.png)
+
+This bar chart also shows the suicide rate by age among these countries, the bar chart gives out a better understanding on the data. In this chart I found that the the average suicide age in the US is 40 years old.
