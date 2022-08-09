@@ -12,7 +12,7 @@ fac_dataframe <- read.csv("Facilities.csv") %>%
 # then group them by the column wanted
 # summarize the name
 # delete any unwanted columns
-table_summary_fac <- fac_dataframe %>%
+table_sum_fac <- fac_dataframe %>%
   group_by(Country, Year, Mental._hospitals, day._treatment, residential_facilities) %>%
   summarize(mental_hospitals = (Mental._hospitals), daily_treatment = (day._treatment))
 table_summary_fac[, c("Mental._hospitals", "day._treatment")] <- list(NULL)

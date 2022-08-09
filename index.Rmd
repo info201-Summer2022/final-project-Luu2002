@@ -22,6 +22,7 @@ There are 4392 valid values in the age dataset, the maximum value is 106.4, the 
 
 ```{r echo = FALSE, results = "asis"}
 library(knitr)
+data(table_sum_age.r)
 kable(table_summary)
 ```
 
@@ -31,7 +32,8 @@ kable(table_summary)
 
 ```{r echo = FALSE, results = "asis"}
 library(knitr)
-kable(table_summary_fac)
+data(table_sum_facilities.r)
+kable(table_sum_fac)
 ```
 
 ### Charts
@@ -40,19 +42,19 @@ kable(table_summary_fac)
 
 The purpose of this scatter plot is to have a clear look at the facilities in each countries. The pertinent observations that I found was how comparing the 8 countries Japan has one of the top for mental hospital and one of the top for daily treatment which was kind of surprising to see how high it is.
 
-![Scatter Plot](/Users/luluuchenn/final-project-Luu2002/images/Fac_Scatter.png)
+![Scatter Plot](images/Fac_Scatter.png)
 
 #### Funnel Plot
 
 The purpose of this chart is to see the relationship between Japan and the United States. Pertinent observation is how America in a different data has the highest suicide rate comparing to other.
 
-![Funnel Chart](/Users/luluuchenn/final-project-Luu2002/images/Fac_Funnel.png)
+![Funnel Chart](images/Fac_Funnel.png)
 
 #### Bar Chart
 
 The purpose of this chart is for fast visual on the country of the highest suicide rate by facilities. By looking at it Japan is the countries with the most and how Cuba has the most residential facilities and Poland has the second most daily treatment
 
-![Bar Chart](/Users/luluuchenn/final-project-Luu2002/images/Fac_Bar.png)
+![Bar Chart](images/Fac_Bar.png)
 
 ### Charts
 
