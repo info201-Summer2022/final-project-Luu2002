@@ -13,8 +13,7 @@ dataset <- read.csv("age.csv") %>%
 # summaries the value by providing an easy read name
 # then delete unnecessary values from the table
   table_summary <- dataset %>%
-  group_by(Location, Period, Dim1, Dim2, Value, Dim2ValueCode) %>%
-  summarise(Gender = (Dim1), Age_range = (Dim2), Age_code =(Dim2ValueCode))
+  group_by(Location) %>%
+  summarize(min = min(Value),q1 = quantile(Value, 0.25), median = median(Value), mean = mean(Value), q3 = quantile(Value, 0.75), max = max(Value))
   table_summary[, c('Dim1', 'Dim2', 'Dim2ValueCode')] <- list(NULL)
-
   

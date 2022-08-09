@@ -1,128 +1,58 @@
----
-title: "Exploratory Data Analysis"
-output: PDF_document
----
-
 ## Suicide Rate By Mental Health in different countries
 
 ### Introduction
 
 Every day there are many people commit suicide across the world and lots of the time people commit suicide due to there mental health and other personal issues too. I genuinely worry about people's mental health, particularly during and after COVID-19. Many people may have overlooked the seriousness of this problem despite the lock down's obvious negative effects on people's mental and psychological actions and perceptions. And maybe by employing code analysis, we can determine how strongly the epidemic and suicide rates are related.
 
+### Summary Paragraph
+
+#### Facilities Data
+
+The maximum and minimum values of Mental \_hospitals in the eight countries Japan, United States of America, Mexico, Morocco, Cuba, Poland, Singapore, and Qatar. The national difference is 8.296. The difference in health_units is 0.444, the difference in outpatient \_facilities is 7.097, the difference in day \_treatment is 3.68, and the difference in residential_facilities is 1.201.
+
+#### Age Data
+
+There are 4392 valid values in the age dataset, the maximum value is 106.4, the minimum value is 0.78, the mean is 15.23109, and the median is 11.59.
+
 ### Table of Summary
+
+#### Age Table
 
 -   The first table shows the suicide age rate per 100,000 population in different countries. The info was from the most recent dataset by WHO. From the dataset an pertinent observations that I found was how male suicide rate are higher then female by age.
 
-| Location | Year | Gender | Avg_rate | Low_rate | High_rate |
-|----------|------|--------|----------|----------|-----------|
+```{r echo = FALSE, results = "asis"}
+library(knitr)
+kable(table_summary)
+```
 
-|           |          |            |          |          |          |
-|-----------|----------|------------|----------|----------|----------|
-| **Japan** | **2019** | **Female** | **6.91** | **6.45** | **7.35** |
-
-| Japan | 2019 | Male | 17.53 | 16.71 | 18.35 |
-|-------|------|------|-------|-------|-------|
-
-| Mexico | 2019 | Both sexes | 5.29 | 4.28 | 6.46 |
-|--------|------|------------|------|------|------|
-
-| Mexico | 2019 | Female | 2.18 | 1.73 | 2.70 |
-|--------|------|--------|------|------|------|
-
-| Mexico | 2019 | Male | 8.69 | 7.06 | 10.57 |
-|--------|------|------|------|------|-------|
-
-| Philippines | 2019 | Both sexes | 2.54 | 1.81 | 9.34 |
-|-------------|------|------------|------|------|------|
-
-| Philippines | 2019 | Female | 1.32 | 1.01 | 9.65 |
-|-------------|------|--------|------|------|------|
-
-| Philippines | 2019 | Male | 3.88 | 2.69 | 9.36 |
-|-------------|------|------|------|------|------|
-
-| Poland | 2019 | Both sexes | 9.30 | 7.34 | 11.75 |
-|--------|------|------------|------|------|-------|
-
-| Poland | 2019 | Female | 2.43 | 1.85 | 3.16 |
-|--------|------|--------|------|------|------|
-
-| Poland | 2019 | Male | 16.46 | 13.06 | 20.72 |
-|--------|------|------|-------|-------|-------|
-
-| Qatar | 2019 | Both sexes | 4.66 | 2.87 | 7.46 |
-|-------|------|------------|------|------|------|
-
-| Qatar | 2019 | Female | 1.69 | 1.01 | 2.63 |
-|-------|------|--------|------|------|------|
-
-| Qatar | 2019 | Male | 5.66 | 3.49 | 9.12 |
-|-------|------|------|------|------|------|
-
-| Singapore | 2019 | Both sexes | 9.65 | 7.77 | 11.77 |
-|-----------|------|------------|------|------|-------|
-
-| Singapore | 2019 | Female | 6.37 | 5.06 | 7.84 |
-|-----------|------|--------|------|------|------|
-
-| Singapore | 2019 | Male | 12.67 | 10.26 | 15.41 |
-|-----------|------|------|-------|-------|-------|
-
-| United States of America | 2019 | Both sexes | 14.51 | 13.56 | 19.35 |
-|--------------------------|------|------------|-------|-------|-------|
-
-| United States of America | 2019 | Female | 6.77 | 6.34 | 8.79 |
-|--------------------------|------|--------|------|------|------|
-
-| United States of America | 2019 | Male | 22.40 | 20.92 | 29.96 |
-|--------------------------|------|------|-------|-------|-------|
+#### Facilities Table
 
 -   The second table shows the different facilities that different countries has. Looking at the data I found that pertinent observations is how Japan has the most mental hospital compare to the other countries. Which I though United States should maybe would have more in comparison.
 
-| Country | Year | residential_facilities | mental_facilities | daily_treatment |
-|---------|------|------------------------|-------------------|-----------------|
-
-| Cuba | 2016 | 1.213 | 0.166 | 0.445 |
-|------|------|-------|-------|-------|
-
-| Japan | 2016 | 0.366 | 8.314 | 3.759 |
-|-------|------|-------|-------|-------|
-
-| Mexico | 2016 | 0.012 | 0.029 | 0.079 |
-|--------|------|-------|-------|-------|
-
-| Morocco | 2016 | 0.069 | 0.032 | 0.101 |
-|---------|------|-------|-------|-------|
-
-| Poland | 2016 | NA  | 0.125 | 0.716 |
-|--------|------|-----|-------|-------|
-
-| Qatar | 2016 | 0.076 | 0.038 | 0.115 |
-|-------|------|-------|-------|-------|
-
-| Singapore | 2016 | 0.054 | 0.018 | 0.163 |
-|-----------|------|-------|-------|-------|
-
-| United States of America | 2016 | NA  | 0.189 | NA  |
-|--------------------------|------|-----|-------|-----|
+```{r echo = FALSE, results = "asis"}
+library(knitr)
+kable(table_summary_fac)
+```
 
 ### Charts
 
 #### Scatter Plot
 
-The purpose of this scatter plot is to have a clear look at the facilities in each countries.
-The pertinent observations that I found was how comparing the 8 countries Japan has one of the top for mental hospital
-and one of the top for daily treatment which was kind of suprising to see how high it is.
-![Scatter Plot](/Users/luluuchenn/Desktop/Rplot.png)
+The purpose of this scatter plot is to have a clear look at the facilities in each countries. The pertinent observations that I found was how comparing the 8 countries Japan has one of the top for mental hospital and one of the top for daily treatment which was kind of surprising to see how high it is.
 
-The purpose of this chart is to see the relationship between Japan and the United States.
-Pertinent oberservation is how America in a differetn data has the highest suicide rate comparing to other.
-![Funnel Chart](/Users/luluuchenn/Desktop/Rplot01.png)
+![Scatter Plot](/Users/luluuchenn/Desktop/Scatter.png)
 
-The purpose of this chart is for fast visual on the country of the highest suicide rate by facilities.
-By looking at it Japan is the countries with the most and how Cuba has the most residential facilities and poland has the
-second most daily treatment
-![Bar Chart](/Users/luluuchenn/Desktop/Rplot02.png)
+#### Funnel Plot
+
+The purpose of this chart is to see the relationship between Japan and the United States. Pertinent observation is how America in a different data has the highest suicide rate comparing to other.
+
+![Funnel Chart](/Users/luluuchenn/Desktop/Funnel.png)
+
+#### Bar Chart
+
+The purpose of this chart is for fast visual on the country of the highest suicide rate by facilities. By looking at it Japan is the countries with the most and how Cuba has the most residential facilities and Poland has the second most daily treatment
+
+![Bar Chart](/Users/luluuchenn/Desktop/Bar.png)
 
 library(plotly) age \<- read.csv("\~/Desktop/age.csv", header=FALSE)%\>% select(V8, V13, V14, V16) %\>% filter(V8 %in% c("united states", "Japan", "Mexico, philippines", "Korea", "Poland", "Singapore", "Qatar")) V13 \<- c(21.6, 16.1, 15.3, 15.3, 8.9, 8.1, 7.9, 3.5) V14 \<- c(6.5,7.5,9.2,7.6, 4.3, 6.2, 4,1.9) V16 \<- c(39.2, 25,21.8, 23.2, 13.3, 9.8, 11.8, 5) age \<- data.frame(V8, V13, V14, V16) sca \<- plot_ly(age, x = \~V8, y = \~V13, type = 'scatter', name = 'Both', mode = 'makers', marker = list(opacity = 1)) fig \<- fig %\>% add_trace(y = \~V14, name = 'Female') fig \<- fig %\>% add_trace(y = \~V16, name = 'Male') fig \<- fig %\>% layout(xaxis = list(showgrid = FALSE), yaxis = list(title = "Rate"), title = "Suicide rate By Age", barmode = 'group') fig
 
