@@ -5,8 +5,8 @@ output: html_document
 ```{r setup, echo = FALSE, message = F,include=FALSE}
 library("knitr")
 library("dplyr")
-source("scripts/table_sum_age.R")
-source("scripts/table_sum_facilities.R")
+source("script/table_sum_age.R")
+source("script/table_sum_facilities.R")
 ```
 
 ## Suicide Rate By Mental Health in different countries
@@ -31,6 +31,7 @@ There are 4392 valid values in the age dataset, the maximum value is 106.4, the 
 
 -   The first table shows the suicide age rate per 100,000 population in different countries. The info was from the most recent dataset by WHO. From the dataset an pertinent observations that I found was how male suicide rate are higher then female by age.
 
+# Locally it runs
 ```{r echo = FALSE, results = "asis"}
 library(knitr)
 data(table_sum_age.r)
@@ -41,6 +42,7 @@ kable(table_summary)
 
 -   The second table shows the different facilities that different countries has. Looking at the data I found that pertinent observations is how Japan has the most mental hospital compare to the other countries. Which I though United States should maybe would have more in comparison.
 
+# Locally it runs
 ```{r echo = FALSE, results = "asis"}
 library(knitr)
 data(table_sum_facilities.r)
