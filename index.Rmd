@@ -1,3 +1,14 @@
+---
+title: "Exploratory Data Analysis"
+output: html_document
+---
+```{r setup, echo = FALSE, message = F,include=FALSE}
+library("knitr")
+library("dplyr")
+source("scripts/table_sum_age.R")
+source("scripts/table_sum_facilities.R")
+```
+
 ## Suicide Rate By Mental Health in different countries
 
 ### Introduction
