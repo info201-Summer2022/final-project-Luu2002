@@ -1,4 +1,4 @@
-## Suicide Rate by Mental Health in different countries
+## Suicide Rate in the World
 
 ### Why are you intereted in this field/domain?
 
@@ -20,24 +20,24 @@
 
 ## Source of Data
 
-**Facilities.csv**
+**gender_rate.csv**
 
 ### Where did you download the data (e.g., a web URL)?
 
-* I download this data from the website call "Kaggle".
-[Facilities.csv](https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Facilities.csv)
+* I download this data from the website call "Our World in Data".
+[Our World in Data](https://ourworldindata.org/suicide)
 
 ### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
-* Not sure where the data was collected nor generated, but the person who collected the data was _Twinkle Khanna_. This data is about the suicide rate in different countries including health and other sectors.
+* Not sure where the data was collected nor generated, but the data was collected by _Our World in Data_. This data is about the suicide rate by gender in different countries across the world from the year of 1990 to 2017.
 
 ### How many observations (rows) are in your data?
 
-* There are 113 rows in this data
+* There are 5405 rows in this data
 
 ### How many features (columns) are in the data?
 
-* There are 7 columns in this data
+* There are 6 columns in this data
 
 ### What questions (from above) can be answered using the data in this dataset?
 
@@ -88,47 +88,47 @@
 
 * Did suicide rate decreased in the recent years?
 
-**Age.csv**
+**age_rate.csv**
 
 ### Where did you download the data (e.g., a web URL)?
 
-* [WHO](https://www.who.int/data/gho/data/themes/mental-health/suicide-rates)
+* [Our World in Data](https://ourworldindata.org/suicide)
 
 ### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
-* The data was collected by WHO and it was generated base on the age. The data will provide the age group who have will commit suicide.
+* The data was collected by _Our World in Data_ and it was generated base on the age. The data provides the suicide rate for age group who had commit suicide in different countries from the year 1990 to 2019
 
 ### How many observations (rows) are in your data?
 
-* 4393 rows
+* 6841 rows
 
 ### How many features (columns) are in the data?
 
-* 34 columns
+* 7 columns
 
 ### What questions (from above) can be answered using the data in this dataset?
 
 * What age group will most likely to contain suicide?
 
 
-**Master.cvs**
+**death_rate.cvs**
 
 ### Where did you download the data (e.g., a web URL)?
 
-* I download this data from the website call "Kaggle".
-[Kaggle](https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016?resource=download)
+* I download this data from the website call "Our World in Data".
+[Our World in Data](https://ourworldindata.org/suicide)
 
 ### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
-* This data was pulled from four other datasets linked by time and place, and was built to find signals correlated to increased suicide rates among different cohorts globally, across the socio-economic spectrum. It did not mention who specific collected the data.
+* The data was collected by suicide death rate around the world in different countries from the year of 1990 to 2019. Not sure who collected these data but it。
 
 ### How many observations (rows) are in your data?
 
-* There are 113 rows in this data
+* There are 6841 rows in this data
 
 ### How many features (columns) are in the data?
 
-* There are 12 columns in this data
+* There are 7 columns in this data
 
 ### What questions (from above) can be answered using the data in this dataset?
 
