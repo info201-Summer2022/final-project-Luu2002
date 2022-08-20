@@ -1,0 +1,14 @@
+name: final-project-Luu2002
+title: final-project-Luu2002
+username:
+account: luluuchen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6814572
+bundleId: 6219947
+url: https://luluuchen.shinyapps.io/final-project-Luu2002/
+when: 1660966971.26044
+lastSyncTime: 1660966971.26045
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|age_rate.csv|data/.DS_Store|data/.Rhistory|data/age_rate.csv|death_rate.csv|gender_rate.csv|images/.DS_Store|images/Fac_Bar.png|images/Fac_Funnel.png|images/Fac_Scatter.png|index.Rmd|README.md|www/.DS_Store|www/image/.DS_Store|script
